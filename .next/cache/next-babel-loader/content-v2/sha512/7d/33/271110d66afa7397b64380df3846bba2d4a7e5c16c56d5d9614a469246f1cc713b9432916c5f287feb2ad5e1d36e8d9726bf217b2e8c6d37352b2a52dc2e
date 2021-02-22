@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as apiTipo } from \"./tipo\";","map":{"version":3,"sources":["C:/Users/ochea/Documents/LAW/nome/src/api/data/index.ts"],"names":["default","apiTipo"],"mappings":"AAAA,SAASA,OAAO,IAAIC,OAApB,QAAmC,QAAnC","sourcesContent":["export { default as apiTipo } from \"./tipo\";"]},"metadata":{},"sourceType":"module"}
