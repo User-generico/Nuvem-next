@@ -21,14 +21,12 @@ const Header = () =>{
     return (
         <Container>
             <div className= "container">
-                <BsCloud onClick = { () => router.push('/')} />
-                {tipos &&
-          tipos.map((item) => (
-            <Link key={item.id} href={`/${item.id}`}>
-              {item.Tipo_de_nuvem}
-            </Link>
-          ))}
-      </div>
+                    <BsCloud onClick = { () => router.push('/')} />
+                    {tipos &&tipos.map((item) => (
+                        <Link key={item.id} href={`/${item.id}`}>
+                            {item.Tipo_de_nuvem}
+                        </Link>
+                ))}
             </div>
         </Container>
     );
