@@ -33,8 +33,9 @@ const Header = () =>{
                     <button>Tipos de Nuvens</button>
                 </Botaodrop>
                 <Dropdowncontent>
-                    <button> a </button>
-
+                    <Link href={`/${item.id}`}>
+                        {item.Cirrus}
+                    </Link>
                 </Dropdowncontent>
             </Dropdown>
         </Container>
