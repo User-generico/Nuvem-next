@@ -4,7 +4,7 @@ import {useRouter} from "next/router";
 import { apiTipo } from "../../api/data";
 import { InterTipo } from "../../styles/Interfaces/Tipo.Interface";
 import  Link from "../../styles/Link";
-import {Container} from "./styles";
+import {Container, Botaodrop, Dropdown, Dropdowncontent} from "./styles";
 
 
 const Header = () =>{
@@ -28,6 +28,15 @@ const Header = () =>{
                         </Link>
                 ))}
             </div>
+            <Dropdown>
+                <Botaodrop> 
+                    <button>Tipos de Nuvens</button>
+                </Botaodrop>
+                <Dropdowncontent>
+                    <button> a </button>
+
+                </Dropdowncontent>
+            </Dropdown>
         </Container>
     );
 };
