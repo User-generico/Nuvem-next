@@ -14,7 +14,7 @@ const Header = () =>{
     useEffect (() => {
         const FectchData = async () => {
             const response = await apiTipo.index();
-            setTipos;(response.data);
+            setTipos(response.data);
         }
         FectchData();
     }, [])
@@ -33,8 +33,8 @@ const Header = () =>{
                     <button>Tipos de Nuvens</button>
                 </Botaodrop>
                 <Dropdowncontent>
-                    <Link href={`/${item.id}`}>
-                        {item.Cirrus}
+                    <Link href={`/cirrus`}>
+                        Cirrus
                     </Link>
                 </Dropdowncontent>
             </Dropdown>

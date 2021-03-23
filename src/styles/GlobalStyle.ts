@@ -16,15 +16,18 @@ export default createGlobalStyle`
         --main-azul-medio: #0B3067;
     }
 
+    body {
+        background: radial-gradient(95.26% 95.26% at 50% 101.66%, rgba(106, 204, 241, 0.91) 0%, rgba(85, 169, 217, 0.91) 31.25%, rgba(37, 90, 162, 0.91) 54.17%, rgba(11, 57, 136, 0.91) 70.31%, rgba(0, 11, 46, 0.91) 100%);
+        background: 100%;
+        background-repeat: no-repeat;
+    }
+    
     .container {
         display: flex;
         align-items: center;
         width: 100%;
         max-width: 1350px;
         margin: 0 auto;
-        background: radial-gradient(95.26% 95.26% at 50% 101.66%, rgba(106, 204, 241, 0.91) 0%, rgba(85, 169, 217, 0.91) 31.25%, rgba(37, 90, 162, 0.91) 54.17%, rgba(11, 57, 136, 0.91) 70.31%, rgba(0, 11, 46, 0.91) 100%);
-        background: 100%;
-        background-repeat: no-repeat;
 
         @media(max-width: 992px){
             max-width: 960px;
