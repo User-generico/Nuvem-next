@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import {BsCloud} from "react-icons/bs";
 import {useRouter} from "next/router";
 import { apiTipo } from "../../api/data";
 import { InterTipo } from "../../styles/Interfaces/Tipo.Interface";
 import  Link from "../../styles/Link";
-import {Container, Botaodrop, Dropdown, Dropdowncontent} from "./styles";
+import {Container, Dropdown} from "./styles";
 
 
 const Header = () =>{
@@ -20,24 +19,20 @@ const Header = () =>{
     }, [])
     return (
         <Container>
-            <div className= "container">
-                    <BsCloud onClick = { () => router.push('/')} />
-                    {tipos &&tipos.map((item) => (
-                        <Link key={item.id} href={`/${item.id}`}>
-                            {item.Tipo_de_nuvem}
-                        </Link>
-                ))}
-            </div>
-            <Dropdown>
-                <Botaodrop> 
-                    <button>Tipos de Nuvens</button>
-                </Botaodrop>
-                <Dropdowncontent>
-                    <Link href={`/cirrus`}>
-                        Cirrus
-                    </Link>
-                </Dropdowncontent>
-            </Dropdown>
+                <img src ="img/logo.svg"/>
+                <Dropdown>
+                    <div className="dropdown">
+                        <button className="dropbtn">TIPOS DE NUVENS</button>
+                        <div className="dropdown-content">
+                            <a href="cirrus">CIRRUS</a>
+                            <a href="cirruscumulus">CIRRUS CUMULUS</a>
+                            <a href="noc">NOCTILUCENTES</a>
+                            <a href="onda">ONDULAÇÕES DE KELVIN-HELMHOLTZ</a>
+                            <a href="index">HOME</a>
+                        </div>
+                    </div>
+                    <div><a href="como" className="button">COMO NASCEM AS NUVENS</a></div>
+                </Dropdown>
         </Container>
     );
 };

@@ -18,10 +18,10 @@ export default createGlobalStyle`
 
     body {
         background: radial-gradient(95.26% 95.26% at 50% 101.66%, rgba(106, 204, 241, 0.91) 0%, rgba(85, 169, 217, 0.91) 31.25%, rgba(37, 90, 162, 0.91) 54.17%, rgba(11, 57, 136, 0.91) 70.31%, rgba(0, 11, 46, 0.91) 100%);
-        background: 100%;
+        background-size : cover;
         background-repeat: no-repeat;
     }
-    
+
     .container {
         display: flex;
         align-items: center;
