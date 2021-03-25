@@ -22,4 +22,8 @@ export const Foo = styled.div `
     margin: 4px 2px;
     cursor: pointer
 }
+
+.musica {
+    visibility:hidden
+}
 `

@@ -28,7 +28,7 @@ const Header = () =>{
                             <a href="cirruscumulus">CIRRUS CUMULUS</a>
                             <a href="noc">NOCTILUCENTES</a>
                             <a href="onda">ONDULAÇÕES DE KELVIN-HELMHOLTZ</a>
-                            <a href="index">HOME</a>
+                            <a href="/">HOME</a>
                         </div>
                     </div>
                     <div><a href="como" className="button">COMO NASCEM AS NUVENS</a></div>
